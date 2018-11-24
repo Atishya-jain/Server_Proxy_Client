@@ -62,8 +62,7 @@ def start_server(addresses, c, addr):
 		c.close()
 
 	# Send NA if a file is not present at the server. NA will trigger the client to not receive the file and inform the user    
-	except Exception as e:
-		raise e    
+	except:
 		c.sendall(b"NA")
 		c.close()
 
@@ -74,7 +73,7 @@ def start_server(addresses, c, addr):
 # 4) Then server will send the file
 # 5) Close
 def start_proxy(addresses, c, addr):
-	# Proxy process
+	# Proxy server process
 	print ("I am a proxy server addresses: " + addresses[1])
 	next_addr = addresses[2].split(' ')
 	del addresses[1]
@@ -122,6 +121,7 @@ def start_proxy(addresses, c, addr):
 	except Exception as e:
 		raise e
 		print ("Forward socket connection error.") 
+		# Close all the connections
 		if s2:
 			s2.close()
 

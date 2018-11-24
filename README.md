@@ -25,7 +25,8 @@ Follow the steps:
 6. On the 4th terminal, write **proxy client.py**. Enter input.txt as filename
 7. Hit enter. File will be transferred.
 
+**Note** - It may happen that your system requires the files to be run in root priveledges to open up socket connections. Please use sudo before each command in that case.
+
 ## Author
 
 * **Atishya Jain** 
-

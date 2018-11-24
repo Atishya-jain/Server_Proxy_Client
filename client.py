@@ -7,7 +7,7 @@ def client(in_filename):
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   
 	# Make the address reusable by other socket connections 
 	s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) 
-	# s.ioctl(socket.SIO_KEEPALIVE_VALS, (1, 10000, 3000))
+
 	#--------------------------------------------
 	# First read the input file and store it properly 
 	#--------------------------------------------
