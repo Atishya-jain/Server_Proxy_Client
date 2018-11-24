@@ -19,7 +19,7 @@ Follow the steps:
 1. Currently uploaded input.txt consists entries for 2 proxy servers and 1 server.
 2. Open 4 terminal sessions
 3. On 2 of them write **python server.py**.
- - Enter IP and PORT of the server as indicated in the input file for proxy servers (last entry denotes main server)
+   - Enter IP and PORT of the server as indicated in the input file for proxy servers (last entry denotes main server)
 4. On 3rd teminal, change its location from the current working directory and from there write **python server.py** and enter the IP and PORT of the main server. (The last entry in input.txt file)
 5. Put a file of your choice at the location of 3rd terminal as we will be transferring that to our current working directory
 6. On the 4th terminal, write **proxy client.py**. Enter input.txt as filename
