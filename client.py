@@ -71,6 +71,8 @@ def client(in_filename):
 		start += len(data)
 		print (str(len(data)) + " received " + str((file_size-start)/file_size*100) + "% remaining")
 	output.close() 
+	# last message to signal retrieval of data complete
+	s.send(b'close')
 
 if __name__ == '__main__':
 	in_filename = input("Enter input filename: ")
